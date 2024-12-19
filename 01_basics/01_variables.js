@@ -1,5 +1,5 @@
 const accountId = 144553
-let accountEmail = "ngarg7789@gmail.com"
+let accountEmail = "ngarg789@gmail.com"
 var accountPassword = "nikhil@1234"
 accountCity = "Sonipat"
 
@@ -11,11 +11,11 @@ let accountState;
 // accountId = 2 // changing the const value is not possible
 
 /* for declaring an variable in javascript we can use both let and var 
- and both let and vart var values can be changed and we are preffered not to use var
+ and both let and  var values can be changed and we are preffered not to use var
  because of issues in block space and functional scope*/
 
  accountEmail = "ngarg788@gmail.com"
-acocuntPassword = "nikhil@7788"
+acocuntPassword = "nikhil@77 8"
 
 
 /* in javascript we can declare a varibale without writing anything in
