@@ -82,3 +82,34 @@ console.log(Object.entries(tinderUser));
 // to check whether the object have that value or not
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
+//.............DESTRUCTURING
+
+  const course = {
+    courseName: "JS in hindi",
+    price: 999,
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: Instructor} = course
+console.log(Instructor);
+
+
+//  ....................API....................
+// OBJECT***
+// {
+//     "name": "nikhil",
+//     "courseName": "JS in hindi",
+//     "price": "free"
+// }
+
+
+
+// Random User Me is an famous API we can use that API 
+// ARRAY**
+[
+    {},
+    {},
+    {},
+]
