@@ -65,12 +65,46 @@ function loginUserMessage(username){
 console.log(loginUserMessage()); // this will give output as undefined
 
 
+// ..................next............
+
+function calculateCartPrice(val1,val2,...num1){
+    return num1
+}
+
+console.log(calculateCartPrice(2));
+console.log(calculateCartPrice(200 ,300 ,400));
+// here 200 goes to val1 and 300 goes to val2 so it will only print 400 as num1
+/* in the above command this will only take the first value 
+for this we have RESTopereator (...num1) and get output as array*/
 
 
 
+// HOW TO PASS AN OBJECT IN AN FUNCTION
+const user = {
+    username: "nikhil",
+    age: 22
+}
 
+function handleObject(anyObject){
+    console.log(`username is ${anyObject.username} and age is ${anyObject.age}`);
 
+}
+handleObject(user)
 
+// we can also pass direct object likw this
+handleObject({
+        username: "krishna",
+        age: 22
+})
 
+// we can also pass arrays directly
+const newArray = [2, 3, 4, 5]
 
+function returnSecondValue(getArray){
+        return getArray[2]
+}
+
+console.log(returnSecondValue(newArray));
+// ....................OR..................
+console.log(returnSecondValue([100, 200, 300, 400]));
 
