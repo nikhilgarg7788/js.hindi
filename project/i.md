@@ -2,7 +2,7 @@
 
 
 ## Project Link
-[Click here]()
+[Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=3-DigitalClock%2Fchaiaurcode.js)
 
 # Solution code
 
@@ -36,7 +36,7 @@ buttons.forEach(function(button){
 ```
 
 
-## project 2
+## project 2 solution
 
 ```javascript 
 const form = document.querySelector('form');
@@ -69,9 +69,23 @@ form.addEventListener('submit',function(e){
 
 });
 
+```
 
 
 
+## project 3 solution
+
+```javascript
+
+const clock = document.getElementById('clock')
 
 
+
+setInterval(function(){
+
+  let date = new Date();
+  // console.log(date.toLocaleString());
+  clock.innerHTML = date.toLocaleTimeString();
+
+}, 1000)
 ```
