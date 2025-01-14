@@ -11,7 +11,7 @@ class User {
         return `123`
     }
 }
-
+// after making static it doesnt allow to access anything like chai etc
 const hitesh = new User("hitesh")
 // console.log(hitesh.createId())
 
