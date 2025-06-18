@@ -1,7 +1,7 @@
  "use strict";
 //  treat all js code as newer version
 
-// alert(3+3) we are using nodejs, not web browser
+// alert(3+3) cant be used because we are using nodejs, not web browser
 
 console.log(3
     +
@@ -21,7 +21,7 @@ console.log(3
 
 // number => 2 to power 53
 // bigint
-//  string => ""
+// string => ""
 // boolean => true/false
 // null => standalone value
 // undefined => value is not assigned
@@ -35,7 +35,7 @@ console.log(3
 console.log(typeof "nikhil");
 
 console.log(typeof null); 
-// the type is object
+// the type is object because null is a object
 
 console.log(typeof undefined);
 // the type is undefined

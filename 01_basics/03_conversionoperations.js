@@ -1,4 +1,4 @@
-let score = "Nan"
+let score = "33abc"
 console.log(typeof score);
 console.log(typeof(score));
 
@@ -7,8 +7,12 @@ let valueInNumber = Number(score)
 console.log(typeof valueInNumber);
 console.log(valueInNumber);
 
+// "33" = 33
+// "33abc" = NaN
+// true = 1
+// false = 0
 
-// the value we take and the value it shoes inside the number
+// the value we take and the value it shows inside the number
 // if we give value null to score then it takes value as 0
 // if we take value of score as undefined then it takes Nan
 // if we take booleanvalue then it takes value as 0 or 1

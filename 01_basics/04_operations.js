@@ -26,10 +26,12 @@ console.log(1 + 2 + "2");
 
 console.log(+true);
 console.log(+"");
-
+// we should not use unary plus operator like this
+// we should use it only for converting string to number
 let num1, num2, num3
 
 num1 = num2 = num3 = 2 + 2
+// we should not write code like this
 
 let gameCounter = 100
 gameCounter++;

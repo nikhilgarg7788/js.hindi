@@ -20,7 +20,8 @@ console.log(undefined < 0);
 /* here the reason for output of the above code is
 that an equity check == and comparison ><>=<= works differently
 comparison converts null to a number, treating it as 0
-that's why(3) null>=0 is true and (1) null>0 is false */
+that's 
+why(3) null>=0 is true and (1) null>0 is false */
 // these above codes can cause confusions
 
 
