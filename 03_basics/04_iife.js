@@ -22,10 +22,14 @@ parenthesis */
 
 // arrow function in IIFE
 // here without name arrow function is working
-(() => {
+
+// this is named iife
+(function chai() {
     console.log(`DB CONNECTED TWO`);
 })();
 
+
+// this is an simple iife
 // if we want to pass an name then
 ((name) => {
     console.log(`DB CONNECTED TWO ${name}`);
