@@ -1,4 +1,4 @@
-// console.log("N");
+ // console.log("N");
 // console.log("I");
 // console.log("K");
 // console.log("H");
@@ -16,7 +16,9 @@ function sayMyName() {
     console.log("L");
 }
 
-// sayMyName() // this is the most basic example
+// sayMyName() 
+// the above command is the function execution
+// this is the most basic example
     
 
 // function addTwoNumbers(number1, number2){
@@ -28,14 +30,20 @@ function sayMyName() {
 // addTwoNumbers(3, "4")
 // addTwoNumbers(3, "a")
 
-
+// function addTwoNumbers(number1, number2){
+//     console.log(number1 + number2);
+// }
+// here if we use console.log then it will print the value as undefined so hereis the 
+// another way to return the value from the function below
 
 function addTwoNumbers(number1, number2){
+
+    
         //  let result = number1 + number2
         //  return result
-        //  after returning we can not print anything
+        //  after using return statement we can not print any other value
 
-        // anotherway
+        // anotherway to return the value
         return number1 + number2
 }
 
@@ -49,23 +57,25 @@ const result = addTwoNumbers(3, 5)
 // ex: number1, number2
 
 function loginUserMessage(username){
-    /*we can also gice some default like
+    /*we can also give some default like
     function loginUserMessage(username = "sam") like this
     if you pass any value to the function then this value will 
     be overwrited */
     // we can also write (username === undefined) AS (!username)
     if(username === undefined){
         console.log("PLEASE ENTER A USERNAME");
-        return
+         return
     }
     return `${username} just logged in `
 }
 
+// we have to write console log in the command below bcs we are 
+// returning the value from the function
 // console.log(loginUserMessage("Nikhil"));
 console.log(loginUserMessage()); // this will give output as undefined
 
 
-// ..................next............
+// ..................REST OPERATOR(...num1 )............
 
 function calculateCartPrice(val1,val2,...num1){
     return num1
@@ -91,7 +101,7 @@ function handleObject(anyObject){
 }
 handleObject(user)
 
-// we can also pass direct object likw this
+// we can also pass direct object like this
 handleObject({
         username: "krishna",
         age: 22
