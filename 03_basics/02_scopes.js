@@ -3,7 +3,7 @@
 
 
 let a = 300 // this printing value of outside/inside loop is called 
-// blockscopeand global scope
+// blockscope and global scope
 if(true){
     let a = 10
     const b = 20
@@ -11,14 +11,16 @@ if(true){
     // console.log("inner: ", a);      
 }
 // console.log(a);
+
 // console.log(b);
 /* here nothing is returned in this loop above but then also 
 30 is coming as output because we took c as var this is the problem 
 with var this is why we sholud ignore var*/
-    // console.log(c);
+
+// console.log(c);
 
 
-// FOR LOOP
+// -----------------FOR LOOP-----------------------
 // for(let i = 0; i < Array.length; i++){
 //     const element = array[i];
 // }
@@ -31,6 +33,9 @@ function one(){
         const website = "youtube"
         // console.log(username);
     }
+
+    // here we can access username because two() is inside one()
+    // but we cannot access website because two() is inside one()
     // console.log(website);
 
     two()
@@ -40,7 +45,13 @@ function one(){
 }
 // one()
 
-// we can do this same thing using if else also
+// -----------------IF ELSE-----------------------
+// here we can access username because it is inside the scope of if
+// but we cannot access website because it is inside the scope of if
+// and we are trying to access it outside the scope of if
+
+// const username = "nikhil"
+//  we can do this same thing using if else also
 
 if(true){
         const username = "nikhil"
@@ -48,10 +59,14 @@ if(true){
             const website = "youtube"
 
             // console.log(username + website);
+            // here we can access username and website because both are inside the scope of if
         }
         // console.log(website);
+        // here we cannot access website because it is inside the scope of if
 }
 // console.log(username);
+// here we can access username because it is outside the scope of if
+
 
 
 // +++++++++++++++++++INTERESTING++++++++++++++++++++++++++++++
@@ -65,7 +80,7 @@ function addOne(num){
 // we can watch this same thing happening in other ways
 /* in this case when we are calling function before declaration
 then its showing error because here we declared function inside an variable */
-
+// this is a function and a  type of expression declared inside a variable
 addTwo(5)
 const addTwo = function(num){
     return num + 2

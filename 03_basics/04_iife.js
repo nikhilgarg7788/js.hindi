@@ -1,8 +1,8 @@
 // IMMEDIATELY INVOKED FUNCTION EXPRESSIONS (IIFE)
-// IIFE is usedto remove thw global scope pollution
+// IIFE is used to remove the global scope pollution
 
 // function chai(){
-//     console.log(`DB CONNECTED`);
+//  console.log(`DB CONNECTED`);
 // }
 // chai()
 
@@ -14,7 +14,6 @@ polluted from the global scope thats why we use IIFE */
 (function chai(){
     console.log(`DB CONNECTED`);
 })();
-
 /* in the above command we wrap the whole function in an
 parenthesis and the second parenthesis is for execution */
 /*inside IIFE func it doesnt knw where to end the context
