@@ -1,6 +1,7 @@
-// const tinderUser = new Object()  // singleton hai
+ // const tinderUser = new Object()  // singleton hai
 
-const tinderUser = {}
+//  non singleton object
+const tinderUser = {}  
 
 tinderUser.id = "123abc"
 tinderUser.name = "Sam"
@@ -29,6 +30,9 @@ const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "c", 4: "d"}
 
 // const obj3 = { obj1 , obj2 }
+// in the above command // we are creating an object with two keys obj1 and obj2
+// but we want to merge them so we can use Object.assign method
+
 
 // here {} = target and obj1,obj2 are sources
 const obj3 = Object.assign({}, obj1, obj2)
@@ -91,12 +95,14 @@ console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 }
 
 // course.courseInstructor
+// to use the value of courseInstructor directly we can use destructuring
 
 const {courseInstructor: Instructor} = course
 console.log(Instructor);
 
 
 //  ....................API....................
+// json is an object
 // OBJECT***
 // {
 //     "name": "nikhil",
@@ -107,6 +113,13 @@ console.log(Instructor);
 
 
 // Random User Me is an famous API we can use that API 
+// for fetching random user data
+
+// API is an object
+// OBJECT***
+// {
+//     "results": [
+//         {
 // ARRAY**
 [
     {},

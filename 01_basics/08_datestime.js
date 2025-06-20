@@ -10,6 +10,7 @@ let myDate =new Date()
 
 // to check the type of date
 // console.log(typeof myDate);
+// type of date is object
 
 // in js months start form 0
 // ways to declare date

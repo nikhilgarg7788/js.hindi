@@ -3,7 +3,7 @@ const repoCount = 100
 
 // console.log(name + repoCount + "VALUE");
 // we should not use this syntax to concat because this is a little outdated
-
+// instead we can use the syntax used below
 console.log(`hello my name is ${name} and my repoCount is ${repoCount}`);
 
 //  another method to declare a string

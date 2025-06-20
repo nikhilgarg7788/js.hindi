@@ -6,7 +6,7 @@ const balance = new Number(200)
 
 // console.log(balance.toString());
 // console.log(balance.toString().length);
-
+  
 //toFixed is used for decimal values like 200.00
 // console.log(balance.toFixed(3));
 
