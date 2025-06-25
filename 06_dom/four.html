@@ -19,7 +19,15 @@
     }
     addLanguage("python")
     addLanguage("typescript")
+    // in the above function there is an optimization issue 
+    // because every time the whole tree is traversed to add a new element
 
+
+
+    // in the below function we are using li again 
+    // because in function there in no access to anyone outside the function
+    // so we can use the same variable name
+    // but it is not a good practice to use the same variable name
     function addOptiLanguage(langName){
         const li = document.createElement('li');
         // this is an optimized approach then upperone
@@ -28,17 +36,19 @@
     }
     addOptiLanguage('golang')
 
+
    // Edit values
     const secondLang = document.querySelector("li:nth-child(2)")
     // secondLang.innerHTML = "Mojo"
-//We use the above approach very less bcs less optimized
+    //We use the above approach very less bcs less optimized
 
     const newli = document.createElement('li');
     newli.textContent = "mojo"
+    // the replace with is used to change the value of the element
     secondLang.replaceWith(newli)   
 
 
-    // edit 
+    //  toedit  
     const firstLang = document.querySelector("li:first-child")
     firstLang.outerHTML = '<li>TypeScript</li>'
 
