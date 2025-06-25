@@ -2,7 +2,7 @@ let score = "33abc"
 // console.log(typeof score);
 // console.log(typeof(score));
 
-
+// the command below is used to convert the value of score into number
 let valueInNumber = Number(score)
 console.log(typeof valueInNumber);
 console.log(valueInNumber);

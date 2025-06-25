@@ -1,13 +1,13 @@
-/* ++++++++JAVASCRIPT EXECUTION CONTEXT++++++++++++++++++
+  /* ++++++++JAVASCRIPT EXECUTION CONTEXT++++++++++++++++++
 mtlb ye ki jo humne file bnai hai use javascript run kese kregi
 Ye 2 Phase m run krti hai 
 
 
-firstly {} -> global EC bnega fir usko refer kia jaega ek 
+firstly {} -> global ExecutionContext bnega fir usko refer kia jaega ek 
 variable (This).
 ye hoga hi hoga 
 
-then we have, second-> Function Ec 
+then we have, second-> Function Execution Context
 
 and when we will study moongse and all then we have one more
 ECContext eval EC
@@ -34,6 +34,8 @@ let val2 = 5
 let result1 = addNum(val1,val2)
 let result2 = addNum(10,2)
 in this code now
+
+// ++++++++++BELOW IS EXPLANATION OF THE ABOVE CODE+++++++++++
 
 1)1st step is global execution
 means this is locates to (this) or ye to hona hi hona hai 

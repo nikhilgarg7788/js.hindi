@@ -41,12 +41,25 @@ console.log(Math.random());
 
 // this will take value greater than 1 and value can also be 0 so that we add 1 in it
 console.log((Math.random() * 10)+ 1);
+
+// the command below will give us a random number between 1 and 10
+// Math.random() generates a number between 0 and 1, so we scale it to
+// the range of 10 and then add 1 to shift the range to start from
 console.log(Math.floor(Math.random() * 10)+ 1);
 
 
 const min = 10
 const max = 20
 
+
+
+// the below command will give us a random number between min and max
+// Math.random() generates a number between 0 and 1, so we scale it to
+// the range of (max - min + 1) and then add min to shift the range
+// to start from min. Finally, we use Math.floor to round down to the nearest
+// integer.
+// This ensures that the result is always an integer between min and max, inclusive.
+// console.log(Math.floor(Math.random() * (max - min + 1)) + min);
 console.log(Math.floor(Math.random()*(max - min +1))+min);
 
  

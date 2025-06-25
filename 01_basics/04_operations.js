@@ -1,4 +1,5 @@
 let value = 3
+// the command below is used to convert the value of value into number
 let negvalue = -value
 console.log(negvalue);
 

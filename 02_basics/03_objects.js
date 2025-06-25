@@ -4,7 +4,9 @@
 
 //OBJECT LITERALS
 
+// the command below is used to create an object
 const mySym = Symbol("key1")
+
 // name is key and nikhil is value and same for all
 const JsUser = {
     name:"Nikhil",

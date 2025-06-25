@@ -2,11 +2,12 @@
 
 const myNum = [1, 2, 3]
 
+// in the command below, we are using the reduce method to sum all the values in the array
 // const myTotal = myNum.reduce(function (acc, currval){
 //         console.log(`acc: ${acc} and currval: ${currval}`);
 //                 return acc + currval
 // },0)
-// 0 is the value for the start of the accumulator
+//  the above 0 is the value for the start of the accumulator
 
 
 // using aero 

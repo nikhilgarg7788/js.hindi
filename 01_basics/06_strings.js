@@ -10,6 +10,8 @@ console.log(`hello my name is ${name} and my repoCount is ${repoCount}`);
 const myName = new String('nikhil-nc-com')
 
 console.log(myName[0]);
+
+// the command below will give us the prototype of the string objec
 console.log(myName.__proto__);
 
 

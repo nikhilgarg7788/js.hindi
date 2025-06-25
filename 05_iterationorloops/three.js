@@ -1,4 +1,4 @@
-//  FOROF LOOP
+ //  FOROF LOOP
 
 // ["" , "" ,"" ] strings inside an 
 // [{}, {}, {}] objects inside an Array

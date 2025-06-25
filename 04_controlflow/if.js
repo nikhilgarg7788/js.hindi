@@ -14,7 +14,7 @@ if(condition){
 // we can also use it like this 
 // const balance = 1000
 // if(balance > 500) console.log("test"), console.log("test2");
-// but we dont had to do like this bcs its immture practice
+// but we dont had to do like this bcs its immature practice
 
 // ++++++++NESTING+++++++
 // if(balance < 500){

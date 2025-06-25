@@ -18,7 +18,7 @@ const dc_heros = ["supreman", "flash", "batman"]
 
  
 // spread is used to get the each element of arrays as like concat
-// spread is used in command below
+// spread is used in command below[...a,...b]
 // const all_New_Heros = [...marvel_heros, ...dc_heros]
 // console.log(all_New_Heros);
 
