@@ -7,6 +7,7 @@
 # Solution code
 
 ## project 1
+<!-- color changer -->
 
 ```javascript 
 
@@ -33,14 +34,20 @@ buttons.forEach(function(button){
     }
   });
 });
+
+
+
+
+
+
 ```
 
 
 ## project 2 solution
-
+<!-- BMI Converter  -->
 ```javascript 
 const form = document.querySelector('form');
-// this usecase will give you a empt value
+// this usecase will give you a empty value
 // const height = parseInt(document.querySelector('#height').value)
 
 
@@ -69,18 +76,26 @@ form.addEventListener('submit',function(e){
 
 });
 
+
+
+
+
+
+
+
 ```
 
 
 
 ## project 3 solution
-
+<!-- CLOCK -->
 ```javascript
 
 const clock = document.getElementById('clock')
 
 
-
+// the command below is used to control the event of JS
+// here we can set the interval
 setInterval(function(){
 
   let date = new Date();
@@ -88,11 +103,24 @@ setInterval(function(){
   clock.innerHTML = date.toLocaleTimeString();
 
 }, 1000)
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 
 
 ## project 4
-
+<!-- GUESS THE NUMBER GAME  -->
 ```javascript
 
 let randomNumber = parseInt(Math.random() * 100 + 1);
@@ -187,12 +215,17 @@ function newGame() {
   });
 }
 
+
+
+
+
+
+
+
 ```
 
-
-
 ## project 5
-
+<!--press key and watch magic-->
 ``` javascript
 
 const insert = document.getElementById('insert');
@@ -217,13 +250,15 @@ window.addEventListener('keydown', (e) => {
   `;
 });
 
+
+
+
+
+
 ```
-
-
-
-## projct 6
-
-``` javasciprt
+## project 6
+<!-- change background color -->
+```javascript
 //generate a random color
 
 const randomColor = function () {
@@ -254,6 +289,6 @@ document.querySelector('#start').addEventListener('click', startChangingColor);
 
 document.querySelector('#stop').addEventListener('click', stopChangingColor);
 
-
-
 ```
+
+

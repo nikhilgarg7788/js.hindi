@@ -23,17 +23,20 @@
     // document.getElementById('owl').onclick = function(){
     //     alert("owl clicked")
     // we dont had that much problem with this but this type 
-    //provides less fetures
+    // but provides less fetures
     // }
+
 
      // attachEvent()
     // jQuery - on
-
+    // we had to study these below properties of event object
     // type, timestamp, defaultPrevented
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
+
+    // eventpropagation is bubbling up the DOM tree
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
     // }, false)
@@ -41,6 +44,7 @@
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
     //     e.stopPropagation()
+    // this command above will stop the bubbling up of the event
     // }, false)
     
     // document.getElementById('google').addEventListener('click',function(e){
