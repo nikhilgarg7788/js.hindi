@@ -25,6 +25,7 @@ function User(username, loginCount, isLoggedIn){
     this.loginCount = loginCount;
     this.isLoggedIn = isLoggedIn
 
+    // we can write methods inside the constructor function
     this.greeting = function(){
         console.log(`Welcome ${this.username}`);
 
