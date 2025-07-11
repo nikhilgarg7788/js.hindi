@@ -1,12 +1,24 @@
+// promise ka mtlb hota hai ki aapko kuch kaam karna hai jo time lega
+// aur jab wo kaam ho jayega tab aapko pata chalega.
+// Promise ek object hai jo aapko batata hai ki aapka kaam kab complete hoga.
+// Promise ka 3 state hota hai:
+// 1. Pending - jab aapka kaam abhi ho raha hai.
+// 2. fullfilled - jab aapka kaam ho gaya hai.
+// 3. Rejected - jab aapka kaam nahi ho paya hai.
+// 4. Resolved - jab aapka kaam ho gaya hai.
+// 5. Settled - jab aapka kaam ho gaya hai ya nahi ho paya hai. 
+// 6. Finally - jab aapka kaam ho gaya hai ya nahi ho paya hai, aapko pata chalega.  
+
 const promiseOne = new Promise(function(resolve, reject){
     //Do an async task
     // DB calls, cryptography, network
     setTimeout(function(){
         console.log('Async task is compelete');
+    // the method below is used to connect .then and resolve
         resolve()
     }, 1000)
 })
-
+// in the command below .then is directly connected to the resolve
 promiseOne.then(function(){
     console.log("Promise consumed");
 })
@@ -65,6 +77,8 @@ const promiseFive = new Promise(function(resolve, reject){
     }, 1000)
 });
 
+// another way to consume a promise is using async/await
+// async/await is a way to write asynchronous code in a synchronous manner.
 async function consumePromiseFive(){
     try {
         const response = await promiseFive
@@ -73,13 +87,18 @@ async function consumePromiseFive(){
         console.log(error);
     }
 }
-
 consumePromiseFive()
 
+
+// fetch is a method to make network requests
+// fetch returns a promise, which resolves to the response of the request
+// fetch is a method to make network requests
 // async function getAllUsers(){
 //     try {
-//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
 
+// here the whole thing of coversion takes time so we have to await for it
+//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+// the command below is used to convert the response to json
 //         const data = await response.json()
 //         console.log(data);
 //     } catch (error) {
