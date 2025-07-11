@@ -1,6 +1,6 @@
 # javascript and classes
 
-## OOP
+## OOP is a programming paradigm or we can say programming structure
 
 ## Object
 - collection of properties and methods
