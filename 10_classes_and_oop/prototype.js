@@ -1,8 +1,9 @@
 // let myName = "hitesh     "
 // let mychannel = "chai     "
 
-// console.log(myName.trueLength);
 
+// the command below gives the true length of the string without spaces
+// console.log(myName.trueLength);
 
 let myHeros = ["thor", "spiderman"]
 
