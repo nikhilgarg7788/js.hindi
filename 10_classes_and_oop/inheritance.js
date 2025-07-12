@@ -10,6 +10,7 @@ class User {
 
 class Teacher extends User{
     constructor(username, email, password){
+    // this super keyword is used to call the constructor of the parent class
         super(username)
         this.email = email
         this.password = password
@@ -22,9 +23,12 @@ class Teacher extends User{
 
 const chai = new Teacher("chai", "chai@teacher.com", "123")
 
+chai.addCourse()
 chai.logMe()
 const masalaChai = new User("masalaChai")
 
+// the command below doesnt have the access to the addCourse method
+// masalaChai.addCourse()
 masalaChai.logMe()
 
 console.log(chai instanceof User);
