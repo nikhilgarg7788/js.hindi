@@ -1,4 +1,4 @@
-const descripter = Object.getOwnPropertyDescriptor(Math, "PI")
+ const descripter = Object.getOwnPropertyDescriptor(Math, "PI")
 
 // console.log(descripter);
 
@@ -21,13 +21,16 @@ console.log(Object.getOwnPropertyDescriptor(chai, "name"));
 Object.defineProperty(chai, 'name', {
     //writable: false,
     enumerable: true,
-// if we make enumarable false then te iteration will be stopped
+// if we make enumarable false then the iteration will be stopped
 // loop wont work anymore
     
 })
 
 console.log(Object.getOwnPropertyDescriptor(chai, "name"));
 
+
+// we use object.entries to get the key value pair of an object
+// it makes object chai as iterable
 for (let [key, value] of Object.entries(chai)) {
     if (typeof value !== 'function') {
         
