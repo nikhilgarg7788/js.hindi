@@ -18,7 +18,9 @@
             document
                 .querySelector('button')
                 .addEventListener('click', this.handleClick.bind(this))
-
+// the command above is necessary to ensure 'this' refers to the React instance
+// in the  command above we use the bind method to bind the context of 'this' to the React instance
+// without this, 'this' would refer to the button element when the event is triggered
         }
         handleClick(){
             console.log("button clicked");
